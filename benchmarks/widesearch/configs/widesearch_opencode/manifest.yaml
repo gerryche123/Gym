@@ -1,4 +1,5 @@
 name: widesearch/configs/widesearch_opencode
+setup_of: widesearch
 version: 0.1.0
 experimental: true
 kind: benchmark

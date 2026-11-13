@@ -1,4 +1,5 @@
 name: brokenarxiv_0526/config_with_system  # pragma: allowlist secret
+protocol_of: brokenarxiv_0526
 version: 0.1.0
 experimental: true
 kind: benchmark

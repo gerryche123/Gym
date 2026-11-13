@@ -1,4 +1,5 @@
 name: terminal_bench_2_1/opencode
+setup_of: terminal_bench_2_1/terminus_2
 version: 0.1.0
 experimental: true
 kind: benchmark

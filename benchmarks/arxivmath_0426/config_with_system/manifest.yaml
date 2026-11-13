@@ -1,4 +1,5 @@
 name: arxivmath_0426/config_with_system
+protocol_of: arxivmath_0426
 version: 0.1.0
 experimental: true
 kind: benchmark

@@ -1,4 +1,5 @@
 name: skillsbench/harbor_opensandbox
+setup_of: skillsbench/harbor
 version: 0.1.0
 experimental: true
 kind: benchmark

@@ -1,4 +1,5 @@
 name: brokenarxiv_0626/config_with_system
+protocol_of: brokenarxiv_0626
 version: 0.1.0
 experimental: true
 kind: benchmark

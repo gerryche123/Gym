@@ -1,4 +1,5 @@
 name: deepsearchqa/configs/deepsearchqa_prime_agent
+setup_of: deepsearchqa
 version: 0.1.0
 experimental: true
 kind: benchmark
