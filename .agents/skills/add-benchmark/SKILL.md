@@ -190,7 +190,7 @@ For a manifest-backed workload, follow [Prepare data and complete the manifest](
 
 Use the code, the data's licence and terms (for `licensing`), and information the user has supplied. Ask for missing maintainer identities instead of guessing. The literal `unknown` is supported by `requirements.gpu`, `requirements.network` and `primary_metric`; it is not a general value for every field. Set `requirements.network` from what the code calls: `no-network`, `allowlist` for specific services such as a search API or a hosted judge model, or `public` for the open internet. List in `overlaps_with` the benchmarks that training on this environment would invalidate, for example because it uses the same source data; leave it absent unless an overlap is known. A setup or protocol declares its own selection fields: copy the answers of the manifest it names and change what differs.
 
-Replace every scaffold `TODO`. When wiring or dataset declarations change, edit the runtime config first, then synchronize the manifest's copied fields and review the diff:
+Replace every scaffold `TODO`. The `check-manifest-selection-fields` pre-commit hook fails until a manifest declares these selection fields. When wiring or dataset declarations change, edit the runtime config first, then synchronize the manifest's copied fields and review the diff:
 
 ```bash
 gym env validate --manifest <path> --sync

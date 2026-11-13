@@ -458,6 +458,8 @@ Write a link as the `name` the target manifest declares. Validation looks for th
 
 A setup or protocol declares its own selection fields; it does not take them from the manifest it names, so each manifest can be read on its own.
 
+In this repository, every manifest, setups and protocols included, must declare `maintainers`, `intended_use`, `requirements.gpu`, `requirements.network` and, for a benchmark, `primary_metric`. The `check-manifest-selection-fields` pre-commit hook enforces this. Write `unknown` for a requirement or a headline metric nobody knows; the hook rejects a scaffold `TODO`.
+
 `dataset_owner` names a config instance, not a component implementation. It selects the intended dataset declaration when multiple instances have datasets; runtime agent routing must still be unambiguous. New task scaffolds put datasets on the resources-server instance. Existing agent-owned declarations, including the reuse-verifier scaffold, remain supported.
 
 ### Prompt Sources
