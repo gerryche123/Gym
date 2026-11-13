@@ -6,7 +6,8 @@ integration_profile: custom-gym-agent-loop
 domain: coding
 description: The pinned 66-task Terminal-Bench 4.0 dataset with the mini-SWE 2.4.6
   native loop owned by the agent server and separate official verification.
-modality: text
+modality:
+- text
 licensing: unknown
 authors:
 - NVIDIA NeMo Gym contributors
